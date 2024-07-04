@@ -19,10 +19,9 @@ pip install retrying
 ```bash
 python3 LLM_control_microswimmers.py
 ```
-```text
+
 Before running this script, you need to enter your API KEY on line 10. You can obtain your API KEY by registering on the [Open API website]([https://platform.openai.com/api-keys]). Please note that you must make a deposit before you can use the API KEY.
 
-```
 
 ## Select the swimmer to control
 

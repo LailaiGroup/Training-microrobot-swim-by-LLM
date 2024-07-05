@@ -52,7 +52,7 @@ When you want to change the moving direction (positive or negative):
 ```bash
 self.history_length = xxx # (line 684)
 ```
-（Refer to 'n_ht' in Figure 3 of the manuscript; here, 'n_ht' refers to 'self.history_length'.）
+（`self.history_length' in the script corresponds to the 'n_ht' variable shown in Figure 3 of the manuscript. Please adjust its value based on the 'n_ht' settings for different swimmers and movement directions depicted in the figure.）
 
 
 

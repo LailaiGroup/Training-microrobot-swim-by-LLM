@@ -45,6 +45,7 @@ swimmer = ThreeSphere() # for Najafi-Golestanian's swimmer
 When you want to change the moving direction (positive or negative):
 1. Change the first sentence of the prompt (see line 766).
 2. Modify the history-clear section (see lines 783-790).
+（If the swimmer is moving in the positive direction, use lines 788-790; if the swimmer is moving in the negative direction, use lines 784-786.）
 ```
 ## Change the number of historical demonstrations
 

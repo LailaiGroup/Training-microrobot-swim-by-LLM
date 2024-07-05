@@ -34,8 +34,9 @@ Before running this script, you need to enter your API KEY on line 10. You can o
 ## Select the swimmer to control
 
 ```bash
+on line 803:
 swimmer = ThreeLink() # for the purcell swimmer
-swimmer = ThreeSphere() # for NG's swimmer (line 803)
+swimmer = ThreeSphere() # for NG's swimmer
 ```
 
 ## Change swimmer's moving direction (positive or negative)

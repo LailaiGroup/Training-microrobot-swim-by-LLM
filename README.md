@@ -51,8 +51,9 @@ When you want to change the moving direction (positive or negative):
 
 ```bash
 self.history_length = xxx # (line 684)
-（Refer to 'n_ht' in Figure 3 of the manuscript; here, 'n_ht' refers to 'self.history_length'.）
 ```
+（Refer to 'n_ht' in Figure 3 of the manuscript; here, 'n_ht' refers to 'self.history_length'.）
+
 
 
 <!--There are two class "class ThreeLink" and "class Threesphere" respectively introduce the environment of purcell swimmer and NG's swimmer. -->

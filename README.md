@@ -35,8 +35,8 @@ Before running this script, you need to enter your API KEY on line 10. You can o
 
 ```bash
 on line 803:
-swimmer = ThreeLink() # for the purcell swimmer
-swimmer = ThreeSphere() # for NG's swimmer
+swimmer = ThreeLink() # for the Purcell's swimmer
+swimmer = ThreeSphere() # for Najafi-Golestanian's swimmer
 ```
 
 ## Change swimmer's moving direction (positive or negative)

@@ -51,6 +51,7 @@ When you want to change the moving direction (positive or negative):
 
 ```bash
 self.history_length = xxx # (line 684)
+（Refer to 'n_ht' in Figure 3 of the manuscript; here, 'n_ht' refers to 'self.history_length'.）
 ```
 
 

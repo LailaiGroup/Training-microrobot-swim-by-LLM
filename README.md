@@ -22,37 +22,61 @@ pip install openai==0.28
 pip install numpy
 pip install retrying
 ```
+## How to decide which script to run
+
+```bash
+LLM_control_microswimmers.py is used to control three-link and three-sphere swimmers; and LLM_control_microswimmers_four_DOF.py is used to control four-link and four-sphere swimmers.
+```
+
 
 ## How to run this script
 ```bash
-python3 LLM_control_microswimmers.py
+python3 LLM_control_microswimmers.py / LLM_control_microswimmers_four_DOF.py
 ```
 
-Before running this script, you need to enter your API KEY on line 10. You can obtain your API KEY by registering on the [Open API website](https://platform.openai.com/api-keys). Please note that you must make a deposit before you can use the API KEY.
+Before running this script, you need to enter your API KEY on line 10 / 12. You can obtain your API KEY by registering on the [Open API website](https://platform.openai.com/api-keys). Please note that you must make a deposit before you can use the API KEY.
 
 
 ## Select the swimmer to control
 
 ```bash
-on line 803:
-swimmer = ThreeLink() # for the Purcell's swimmer
-swimmer = ThreeSphere() # for Najafi-Golestanian's swimmer
+In the file LLM_control_microswimmers.py, line 803:
+swimmer = ThreeLink() # for the Purcell's (three-link) swimmer
+swimmer = ThreeSphere() # for Najafi-Golestanian's (three-sphere) swimmer
+```
+
+```bash
+In the file LLM_control_microswimmers_four_DOF.py, line 616:
+swimmer = FourLink() # for the four-link swimmer
+swimmer = FourSphere() # for the four-sphere swimmer
 ```
 
 ## Change swimmer's moving direction (positive or negative)
 
 ```text
-When you want to change the moving direction (positive or negative):
+In the file LLM_control_microswimmers.py, when you want to change the moving direction (positive or negative) for the three-link and three-sphere swimmers:
 1. Change the first sentence of the prompt (see line 766).
 2. Modify the history-clear section (see lines 783-790).
 （If the swimmer is moving in the positive direction, use lines 788-790; if the swimmer is moving in the negative direction, use lines 784-786.）
 ```
+
+```text
+In the file LLM_control_microswimmers_four_DOF.py, when you want to change the moving direction (positive or negative) for the four-link and four-sphere swimmers:
+1. Change the first sentence of the prompt (see line 578).
+2. Modify the history-clear section (see lines 594-601).
+（If the swimmer is moving in the positive direction, use lines 598-601; if the swimmer is moving in the negative direction, use lines 594-597.）
+```
 ## Change the number of historical demonstrations
 
 ```bash
-self.history_length = xxx # (line 684)
+In the file LLM_control_microswimmers.py, line 684:
+self.history_length = xxx # 
 ```
-（'self.history_length' in the script corresponds to the 'n_ht' variable shown in Figure 3 of the manuscript.）
+```bash
+In the file LLM_control_microswimmers_four_DOF.py, line 496:
+self.history_length = xxx # 
+```
+（'self.history_length' in the script corresponds to the 'n_ht' variable shown in Figure 3 of the manuscript. For the four-link and four-sphere swimmers, 'self.history_length' is consistently set to 20.）
 
 
 

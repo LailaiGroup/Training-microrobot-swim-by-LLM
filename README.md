@@ -25,7 +25,7 @@ pip install retrying
 ## How to decide which script to run
 
 ```bash
-LLM_control_microswimmers.py is used to control three-link and three-sphere swimmers; and LLM_control_microswimmers_four_DOF.py is used to control four-link and four-sphere swimmers.
+LLM_control_microswimmers.py is used to control three-link and three-sphere swimmers, and LLM_control_microswimmers_four_DOF.py is used to control four-link and four-sphere swimmers.
 ```
 
 

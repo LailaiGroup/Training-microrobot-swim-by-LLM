@@ -1,16 +1,16 @@
-# Python script for 'Training microrobots to swim by a large language model' (arXiv: 2402.00044)
+# Python script for 'Training microrobots to swim by a large language model'
 
 [This repository]([https://www.google.com](https://github.com/ZhulailaiFluidLab/Training_microswimmer_by_LLM)) includes the python script of the following paper:
 
-Xu Z, Zhu L. Training microrobots to swim by a large language model[J]. arXiv preprint arXiv:2402.00044, 2024. [arxiv](https://arxiv.org/abs/2402.00044)
+Z. Xu, L. Zhu*. Training microrobots to swim by a large language model. Phys. Rev. Appl., 23, 044058, 2025. [Publisher](https://journals-aps-org.libproxy1.nus.edu.sg/prapplied/abstract/10.1103/PhysRevApplied.23.044058)
 
 *If you find our script useful for your research, please acknowledge our work by citing it!*
 
-@article{xu2024training,\
+@article{xu2025training,\
   title={Training microrobots to swim by a large language model},\
   author={Xu, Zhuoqun and Zhu, Lailai},\
-  journal={arXiv preprint arXiv:2402.00044},\
-  year={2024}\
+  journal={Phys. Rev. Appl.},\
+  year={2025}\
 }
 
 ## Project dependencies
